@@ -1,5 +1,7 @@
 package pl.hashmap;
 
+import java.util.Objects;
+
 public class Entry<K,V> {
 
     private K key;
@@ -22,5 +24,15 @@ public class Entry<K,V> {
     }
     public V getValue(){
         return value;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return super.equals(o);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
     }
 }
